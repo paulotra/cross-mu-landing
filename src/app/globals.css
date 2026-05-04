@@ -22,5 +22,20 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-inter), Arial, sans-serif;
+}
+
+.navbar {
+  backdrop-filter: blur(12px);
+
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: url('/nav-bg.png');
+    background-size: cover;
+    background-position: center bottom;
+    opacity: 0.8;
+    pointer-events: none;
+  }
 }
