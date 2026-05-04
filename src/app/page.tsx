@@ -1,13 +1,17 @@
 export default async function Home() {
   return (
-    <div className="h-[1000px]">
-      <section className="relative min-h-screen w-full overflow-visible">
+    <div className="min-h-[1000px]">
+      <section className="relative flex min-h-screen w-full overflow-visible">
         {/* Base background image */}
         <img
           src="/home/hero.png"
           alt=""
           className="absolute inset-0 w-full object-cover object-top-right"
         />
+
+        <div className="flex max-w-1/2 flex-1 items-center justify-center">
+          <img src="/logo-emblem.png" alt="" className="relative max-w-[476px]" />
+        </div>
 
         {/* Video overlay — blended on top of background */}
         <video
@@ -29,6 +33,9 @@ export default async function Home() {
           <source src="/home/character.mp4" type="video/mp4" />
         </video>
       </section>
+      <div className="relative">
+        <img src="/bg-strip.png" alt="" className="absolute inset-0 top-[-480px] z-10 w-full" />
+      </div>
     </div>
   )
 }
