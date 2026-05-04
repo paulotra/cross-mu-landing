@@ -4,7 +4,7 @@ import Button from '@/components/Button'
 export default async function Home() {
   return (
     <div className="min-h-[1000px]">
-      <section className="relative flex min-h-screen w-full overflow-visible">
+      <section className="relative flex h-screen min-h-[800px] w-full overflow-visible">
         {/* Base background image */}
         <Image
           src="/home/hero.png"

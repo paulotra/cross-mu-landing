@@ -70,3 +70,7 @@ body {
     pointer-events: none;
   }
 }
+
+img {
+  pointer-events: none;
+}
