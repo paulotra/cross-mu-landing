@@ -34,7 +34,7 @@ export default async function Home() {
         </video>
       </section>
       <div className="relative">
-        <img src="/bg-strip.png" alt="" className="absolute inset-0 top-[-480px] z-10 w-full" />
+        <img src="/bg-strip.png" alt="" className="absolute inset-0 top-[-400px] z-10 w-full" />
       </div>
     </div>
   )

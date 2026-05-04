@@ -1,5 +1,6 @@
 'use client'
 
+import Image from 'next/image'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import Logo from '@/components/Logo'
@@ -74,12 +75,12 @@ export default function Navbar() {
         {/* Auth buttons */}
         <div className="flex items-center gap-3">
           <NavButton href="/login">
-            <img src="/icons/login.svg"></img>
+            <Image src="/icons/login.svg" alt="" width={16} height={16} />
             <GradientText>Log in</GradientText>
           </NavButton>
 
           <NavButton href="/register">
-            <img src="/icons/register.svg"></img>
+            <Image src="/icons/register.svg" alt="" width={18} height={18} />
             <GradientText>Register</GradientText>
           </NavButton>
         </div>

@@ -12,7 +12,10 @@
       "Bash(npx husky *)",
       "Bash(curl -sL \"https://www.figma.com/api/mcp/asset/729b3330-6f00-4439-846f-221fe167ae48\" -o /Users/paulo/Sites/cross-mu-landing/public/logo-icon.png)",
       "Bash(curl -sL \"https://www.figma.com/api/mcp/asset/59b19ea7-e7ee-40d7-8c3d-fc84cd756827\" -o /Users/paulo/Sites/cross-mu-landing/public/logo-text.svg)",
-      "Bash(curl -sL \"https://www.figma.com/api/mcp/asset/b19fe377-df2c-4b0b-8cf3-c40e9bf79e56\" -o /Users/paulo/Sites/cross-mu-landing/public/nav-bg.jpg)"
+      "Bash(curl -sL \"https://www.figma.com/api/mcp/asset/b19fe377-df2c-4b0b-8cf3-c40e9bf79e56\" -o /Users/paulo/Sites/cross-mu-landing/public/nav-bg.jpg)",
+      "Bash(npx eslint *)",
+      "Bash(identify /Users/paulo/Sites/cross-mu-landing/public/logo-icon.png)",
+      "Bash(identify /Users/paulo/Sites/cross-mu-landing/public/home/hero.png)"
     ]
   }
 }
