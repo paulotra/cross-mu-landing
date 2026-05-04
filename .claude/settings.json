@@ -16,7 +16,8 @@
       "Bash(npx eslint *)",
       "Bash(identify /Users/paulo/Sites/cross-mu-landing/public/logo-icon.png)",
       "Bash(identify /Users/paulo/Sites/cross-mu-landing/public/home/hero.png)",
-      "Bash(sips -g pixelWidth -g pixelHeight /Users/paulo/Sites/cross-mu-landing/public/home/hero.png)"
+      "Bash(sips -g pixelWidth -g pixelHeight /Users/paulo/Sites/cross-mu-landing/public/home/hero.png)",
+      "Bash(curl -sL \"https://www.figma.com/api/mcp/asset/f3846d3a-353c-42bb-8113-efedf686d918\" -o /Users/paulo/Sites/cross-mu-landing/public/btn-texture.png)"
     ]
   }
 }

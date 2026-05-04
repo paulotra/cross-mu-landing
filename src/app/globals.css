@@ -10,6 +10,7 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --font-philosopher: var(--font-philosopher);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -25,6 +26,10 @@ body {
   font-family: var(--font-inter), Arial, sans-serif;
   letter-spacing: 2px;
   font-weight: 300;
+}
+
+.container {
+  @apply mx-auto max-w-[1262px];
 }
 
 .nav-link-active {

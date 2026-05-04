@@ -48,8 +48,8 @@ export default function Navbar() {
 
   return (
     <nav className="navbar fixed inset-x-0 top-0 z-100 flex items-center bg-[rgba(37,42,60,0.24)]">
-      <div className="relative mx-auto flex w-full max-w-[1262px] items-center justify-between px-4">
-        <div className="flex items-center gap-x-5">
+      <div className="relative container flex w-full items-center justify-between px-4">
+        <div className="flex items-center gap-x-7">
           <Link href="/">
             <Logo />
           </Link>
