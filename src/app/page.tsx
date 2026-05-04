@@ -15,7 +15,7 @@ export default async function Home() {
           priority
         />
         <div className="container flex">
-          <div className="flex max-w-1/2 flex-1 flex-col items-center justify-center gap-y-6">
+          <div className="-mt-20 flex max-w-1/2 flex-1 flex-col items-center justify-center gap-y-6">
             <Image
               src="/logo-emblem.png"
               alt=""
@@ -23,7 +23,14 @@ export default async function Home() {
               height={952}
               className="relative h-auto max-w-[476px]"
             />
-            <div className="flex items-center gap-x-8">
+            <div className="relative flex items-center gap-x-8">
+              <Image
+                src="/shadow.svg"
+                alt=""
+                width={608}
+                height={114}
+                className="absolute top-[32px] right-0 left-0 mx-auto"
+              />
               <Button variant="large" type="submit">
                 Download Now
               </Button>
@@ -39,7 +46,7 @@ export default async function Home() {
             loop
             muted
             playsInline
-            className="absolute right-0 mt-20 mr-10 w-[720px]"
+            className="absolute right-0 mt-20 mr-16 w-[720px]"
             style={{
               maskImage: [
                 'linear-gradient(to right, transparent 0%, black 25%)',
@@ -60,7 +67,7 @@ export default async function Home() {
           alt=""
           width={3120}
           height={5800}
-          className="absolute inset-0 top-[-400px] z-10 w-full"
+          className="absolute inset-0 top-[-460px] z-10 w-full"
         />
       </div>
     </div>
