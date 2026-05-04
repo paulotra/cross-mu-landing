@@ -23,6 +23,31 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-inter), Arial, sans-serif;
+  letter-spacing: 2px;
+  font-weight: 300;
+}
+
+.nav-link-active {
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.32), rgba(0, 0, 0, 0));
+    pointer-events: none;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: linear-gradient(139.77deg, rgb(192, 243, 255) 0%, rgb(126, 181, 247) 100%);
+    pointer-events: none;
+  }
 }
 
 .navbar {
@@ -32,9 +57,10 @@ body {
     content: '';
     position: absolute;
     inset: 0;
+    bottom: -1px;
     background-image: url('/nav-bg.png');
-    background-size: cover;
-    background-position: center bottom;
+    background-size: 1560px;
+    background-position: center;
     opacity: 0.8;
     pointer-events: none;
   }
