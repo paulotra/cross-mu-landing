@@ -33,7 +33,9 @@
       "Bash(curl -sL \"https://www.figma.com/api/mcp/asset/e690b2ae-f7db-45fd-a05c-c1621961d895\" -o /Users/paulo/Sites/cross-mu-landing/public/guilds/guild-2.png)",
       "Bash(curl -sL \"https://www.figma.com/api/mcp/asset/2421d9d2-e4ab-410b-bf53-22ad708c21dd\" -o /Users/paulo/Sites/cross-mu-landing/public/guilds/guild-3.png)",
       "Bash(curl -sL \"https://www.figma.com/api/mcp/asset/62cce361-3672-44e1-8b7c-c9ffc306d8da\" -o /Users/paulo/Sites/cross-mu-landing/public/guilds/guild-4.png)",
-      "Bash(curl -sL \"https://www.figma.com/api/mcp/asset/1208205f-dd3f-49ee-bc49-8048af064f97\" -o /Users/paulo/Sites/cross-mu-landing/public/guilds/guild-5.png)"
+      "Bash(curl -sL \"https://www.figma.com/api/mcp/asset/1208205f-dd3f-49ee-bc49-8048af064f97\" -o /Users/paulo/Sites/cross-mu-landing/public/guilds/guild-5.png)",
+      "Bash(curl -sL \"https://www.figma.com/api/mcp/asset/4ac1bee6-a4e5-4d2d-864b-77acf1deae3d\" -o /tmp/kanturu-check)",
+      "Bash(curl -sL \"https://www.figma.com/api/mcp/asset/17069dfc-18a2-4fbc-9485-9b67cdde0241\" -o /tmp/img393-check)"
     ],
     "additionalDirectories": [
       "/private/tmp"

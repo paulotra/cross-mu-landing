@@ -3,11 +3,12 @@ import Button from '@/components/Button'
 import LoginForm from '@/components/Panels/LoginForm'
 import TopPlayers from '@/components/Panels/TopPlayers'
 import TopGuilds from '@/components/Panels/TopGuilds'
+import Banner from '@/components/Home/Banner'
 
 export default async function Home() {
   return (
     <div>
-      <section className="relative flex h-screen min-h-[800px] w-full overflow-visible">
+      <section className="relative flex min-h-[800px] w-full overflow-visible">
         {/* Base background image */}
         <Image
           src="/home/hero.png"
@@ -87,7 +88,9 @@ export default async function Home() {
             <TopPlayers />
             <TopGuilds />
           </div>
-          <div className="col-span-8 bg-white p-8"></div>
+          <div className="col-span-8">
+            <Banner />
+          </div>
         </div>
       </div>
     </div>
