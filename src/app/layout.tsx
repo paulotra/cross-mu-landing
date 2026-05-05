@@ -41,17 +41,17 @@ export default function RootLayout({
         <link rel="preload" href="/nav-bg.webp" as="image" type="image/webp" />
       </head>
       <body className="relative flex min-h-full w-full flex-col">
-<AuthProvider>
+        <AuthProvider>
           <Navbar />
           <SmoothScroll>
             <main className="w-full">{children}</main>
             <Footer />
             <Image
-              src="/bg-strip.webp"
+              src="/bg-stripped.webp"
               alt=""
               width={3120}
               height={5800}
-              className="absolute inset-0 top-136 z-[9] h-full"
+              className="absolute top-0 right-0 -left-440 z-[9] mx-auto h-full max-w-none md:top-136 md:left-0"
             />
           </SmoothScroll>
         </AuthProvider>
