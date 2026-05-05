@@ -12,7 +12,7 @@ import ScreenShots from '@/components/Home/ScreenShots'
 export default async function Home() {
   return (
     <div>
-      <section className="relative flex min-h-[440px] w-full overflow-visible md:min-h-[800px]">
+      <section className="relative flex min-h-[520px] w-full overflow-visible md:min-h-[800px]">
         <HeroParticles />
         {/* Base background image */}
         <Image
@@ -41,7 +41,7 @@ export default async function Home() {
                 className="relative h-auto max-w-[360px] lg:max-w-[476px]"
               />
             </div>
-            <div className="relative top-30 flex flex-col items-center gap-8 md:flex-row">
+            <div className="relative top-40 flex flex-col items-center gap-8 md:top-0 md:flex-row">
               <Image
                 src="/shadow.svg"
                 alt=""
@@ -72,7 +72,7 @@ export default async function Home() {
             loop
             muted
             playsInline
-            className="absolute right-0 left-[-40px] mx-auto -mt-10 min-w-[520px] lg:left-auto lg:mt-20 lg:mr-8 lg:w-[720px]"
+            className="absolute right-0 left-[-54px] mx-auto mt-8 min-w-[520px] md:left-[-40px] md:-mt-10 lg:left-auto lg:mt-20 lg:mr-8 lg:w-[720px]"
             style={{
               maskImage: [
                 'linear-gradient(to right, transparent 0%, black 25%)',
