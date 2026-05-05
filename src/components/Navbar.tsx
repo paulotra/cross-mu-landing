@@ -3,6 +3,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
+import { useState } from 'react'
 import Logo from '@/components/Logo'
 
 const links = [
@@ -17,7 +18,7 @@ function NavButton({ href, children }: { href: string; children: React.ReactNode
   return (
     <Link
       href={href}
-      className="relative flex min-w-[100px] items-center justify-center gap-[6px] overflow-hidden rounded-[4px] bg-[#676d83] px-6 py-2 tracking-normal transition-[filter] duration-200 hover:[filter:brightness(1.24)]"
+      className="relative hidden min-w-[100px] items-center justify-center gap-[6px] overflow-hidden rounded-[4px] bg-[#676d83] px-6 py-2 tracking-normal transition-[filter] duration-200 hover:[filter:brightness(1.24)] md:flex"
       style={{
         backgroundImage: "url('/bg-texture.png')",
         backgroundSize: '400px',
@@ -45,9 +46,10 @@ function GradientText({ children }: { children: React.ReactNode }) {
 
 export default function Navbar() {
   const pathname = usePathname()
+  const [menuOpen, setMenuOpen] = useState(false)
 
   return (
-    <nav className="navbar fixed inset-x-0 top-0 z-100 flex items-center bg-[rgba(37,42,60,0.24)] py-3 lg:py-0">
+    <nav className={`navbar fixed inset-x-0 top-0 z-100 flex items-center bg-[rgba(37,42,60,0.24)] py-3 lg:py-0${menuOpen ? ' menu-open' : ''}`}>
       <div className="relative container flex w-full items-center justify-between px-4">
         <div className="flex items-center gap-x-7">
           <Link href="/">
@@ -83,6 +85,25 @@ export default function Navbar() {
             <Image src="/icons/register.svg" alt="" width={18} height={18} />
             <GradientText>Register</GradientText>
           </NavButton>
+
+          <button
+            className="flex flex-col justify-center gap-[5px] p-1 lg:hidden"
+            aria-label={menuOpen ? 'Close menu' : 'Open menu'}
+            onClick={() => setMenuOpen((o) => !o)}
+          >
+            {menuOpen ? (
+              <>
+                <span className="block h-[2px] w-6 translate-y-[3.5px] rotate-45 bg-white" />
+                <span className="block h-[2px] w-6 -translate-y-[3.5px] -rotate-45 bg-white" />
+              </>
+            ) : (
+              <>
+                <span className="block h-[2px] w-6 bg-white" />
+                <span className="block h-[2px] w-6 bg-white" />
+                <span className="block h-[2px] w-6 bg-white" />
+              </>
+            )}
+          </button>
         </div>
       </div>
     </nav>
