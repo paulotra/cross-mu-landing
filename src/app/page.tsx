@@ -72,7 +72,7 @@ export default async function Home() {
             loop
             muted
             playsInline
-            className="absolute right-0 left-[-54px] mx-auto mt-8 min-w-[520px] md:left-[-40px] md:-mt-10 lg:left-auto lg:mt-20 lg:mr-8 lg:w-[720px]"
+            className="absolute right-0 left-[-70px] mx-auto mt-8 min-w-[520px] md:left-[-40px] md:-mt-10 lg:left-auto lg:mt-20 lg:mr-8 lg:w-[720px]"
             style={{
               maskImage: [
                 'linear-gradient(to right, transparent 0%, black 25%)',
