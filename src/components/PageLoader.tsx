@@ -1,12 +1,11 @@
 'use client'
 
 import { useEffect, useState } from 'react'
-import Image from 'next/image'
 
 export default function PageLoader() {
   const [fading, setFading] = useState(false)
-  const [gone, setGone] = useState(() =>
-    typeof window !== 'undefined' && !!sessionStorage.getItem('loaded')
+  const [gone, setGone] = useState(
+    () => typeof window !== 'undefined' && !!sessionStorage.getItem('loaded')
   )
 
   useEffect(() => {
