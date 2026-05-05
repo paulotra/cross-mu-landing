@@ -37,7 +37,7 @@ export default function RootLayout({
             <main className="w-full">{children}</main>
             <Footer />
             <Image
-              src="/bg-strip.png"
+              src="/bg-strip.webp"
               alt=""
               width={3120}
               height={5800}

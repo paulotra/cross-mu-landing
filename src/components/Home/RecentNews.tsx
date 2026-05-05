@@ -8,12 +8,12 @@ export default function RecentNews() {
     <div>
       <div className="mt-6 flex items-center gap-x-4">
         <Divider />
-        <Image src="/gem.png" alt="" width={24} height={16} />
+        <Image src="/gem.webp" alt="" width={24} height={16} />
         <h2 className="font-philosopher text-3xl whitespace-nowrap">Latest News</h2>
-        <Image src="/gem.png" alt="" width={24} height={16} />
+        <Image src="/gem.webp" alt="" width={24} height={16} />
         <Divider />
       </div>
-      <div className="mt-8 grid grid-cols-1 gap-4 lg:grid-cols-2">
+      <div className="mt-8 grid grid-cols-1 gap-4 md:grid-cols-2">
         <NewsCard
           title="Today big updates have been applied to server! Enjoy the game!"
           description="New epic wings for Wings of Darkness for Muse Elfves for 4th class. Features: Grow Lance Archangel's Absolute Weapon."

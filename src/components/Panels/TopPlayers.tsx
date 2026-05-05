@@ -15,10 +15,10 @@ export default function TopPlayers() {
     <CardTextured corners={true} className="pb-8">
       <div className="mb-1 flex items-center justify-between">
         <h3 className="font-philosopher flex items-center gap-x-3 text-xl font-bold">
-          <Image src="/gem.png" className="rotate-90" alt="" width={24} height={16} />
+          <Image src="/gem.webp" className="rotate-90" alt="" width={24} height={16} />
           Top Players
         </h3>
-        <Image src="/logo-icon-small.png" alt="" width={28} height={38} />
+        <Image src="/logo-icon-small.webp" alt="" width={28} height={38} />
       </div>
       <p className="mb-6 text-xs">The best players of Cross MU Online</p>
 

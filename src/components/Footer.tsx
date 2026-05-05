@@ -22,7 +22,7 @@ const columns = [
 
 export default function Footer() {
   return (
-    <footer className="relative z-10 -mt-[100px] bg-[url('/bg-scales.png')] bg-cover bg-[position:center_50%] bg-no-repeat pt-[200px] pb-10">
+    <footer className="relative z-10 -mt-[100px] bg-[url('/bg-scales.webp')] bg-cover bg-[position:center_50%] bg-no-repeat pt-[200px] pb-10">
       <div className="container flex flex-col gap-12 px-4">
         {/* Top emblem + dividers */}
         <div className="flex items-center gap-3">
@@ -30,7 +30,7 @@ export default function Footer() {
             <Divider />
           </div>
           <Image
-            src="/logo-icon-small.png"
+            src="/logo-icon-small.webp"
             alt="Cross MU Online"
             width={64}
             height={64}
@@ -48,7 +48,7 @@ export default function Footer() {
               {/* Column heading */}
               <div className="flex items-center justify-center gap-3 md:justify-start">
                 <Image
-                  src="/gem.png"
+                  src="/gem.webp"
                   alt=""
                   width={13}
                   height={20}
@@ -81,7 +81,7 @@ export default function Footer() {
             <p className="w-[400px] text-center text-sm font-light tracking-[0.28px] text-white md:text-left">
               © 2026 - Cross MU Online. All rights reserved.
             </p>
-            <Image src="/logo-emblem.png" alt="" width={99} height={66} className="h-14 w-auto" />
+            <Image src="/logo-emblem.webp" alt="" width={99} height={66} className="h-14 w-auto" />
             <p className="w-[400px] text-center text-sm font-light tracking-[0.28px] text-white md:text-right">
               Designed By Cross Studio Inc.
             </p>

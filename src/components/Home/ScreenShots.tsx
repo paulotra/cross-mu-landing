@@ -9,11 +9,11 @@ export default function ScreenShots() {
     <CardTextured corners={false} ribbon={true} className="mt-20">
       <div className="mt-6 mb-6 flex items-center gap-x-4">
         <Divider />
-        <Image src="/gem.png" alt="" width={24} height={16} />
+        <Image src="/gem.webp" alt="" width={24} height={16} />
         <h3 className="font-philosopher gap-x-4 text-xl font-bold whitespace-nowrap">
           Screenshots
         </h3>
-        <Image src="/gem.png" alt="" width={24} height={16} />
+        <Image src="/gem.webp" alt="" width={24} height={16} />
         <Divider />
       </div>
 

@@ -27,14 +27,14 @@ export default async function Home() {
           <div className="relative z-10 -mt-20 flex flex-1 flex-col items-center justify-center gap-y-6 lg:max-w-1/2">
             <div className="relative mt-20 hidden h-fit w-fit pt-20 md:block lg:mt-0 lg:pt-0">
               <Image
-                src="/logo-emblem.png"
+                src="/logo-emblem.webp"
                 alt=""
                 width={952}
                 height={952}
                 className="absolute h-full w-full blur-[120px]"
               />
               <Image
-                src="/logo-emblem.png"
+                src="/logo-emblem.webp"
                 alt=""
                 width={952}
                 height={952}

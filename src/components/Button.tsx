@@ -27,7 +27,7 @@ export default function Button({
       <span className="absolute inset-0 overflow-hidden">
         <span
           aria-hidden
-          className="pointer-events-none absolute -top-[126px] -left-[107px] h-[574px] w-[568px] bg-[url('/btn-texture.png')] bg-[length:568px_574px] bg-[position:20%_30%] bg-no-repeat"
+          className="pointer-events-none absolute -top-[126px] -left-[107px] h-[574px] w-[568px] bg-[url('/btn-texture.webp')] bg-[length:568px_574px] bg-[position:20%_30%] bg-no-repeat"
         />
       </span>
       <span className="absolute top-[-4px] right-0 left-0 h-[4px] bg-[url('/btn/btn-border-t.svg')]"></span>

@@ -16,19 +16,19 @@ export default function CardTextured({
   return (
     <div
       {...props}
-      className={`relative bg-[url('/btn-texture.png')] bg-[length:1621px_772px] bg-[position:0_0] bg-no-repeat p-8 [box-shadow:0_12px_32px_rgba(0,0,0,0.40)] ${className}`}
+      className={`relative bg-[url('/btn-texture.webp')] bg-[length:1621px_772px] bg-[position:0_0] bg-no-repeat p-8 [box-shadow:0_12px_32px_rgba(0,0,0,0.40)] ${className}`}
     >
       {corners && (
         <>
           <Image
-            src="/card-corner.png"
+            src="/card-corner.webp"
             alt=""
             width={54}
             height={42}
             className="absolute top-[2px] left-[2px] -mx-3 -my-3"
           />
           <Image
-            src="/card-corner.png"
+            src="/card-corner.webp"
             alt=""
             width={54}
             height={42}

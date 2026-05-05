@@ -6,9 +6,9 @@ export default function LoginForm() {
   return (
     <CardTextured corners={true} className="col-span-4 pb-10">
       <h3 className="font-philosopher mb-6 flex items-center justify-center gap-x-4 text-xl font-bold">
-        <Image src="/gem.png" alt="" width={24} height={16} />
+        <Image src="/gem.webp" alt="" width={24} height={16} />
         Account Panel
-        <Image src="/gem.png" alt="" width={24} height={16} />
+        <Image src="/gem.webp" alt="" width={24} height={16} />
       </h3>
       <form action="" className="gap1-y-5 flex flex-col">
         <div className="relative bg-[#00000030]">

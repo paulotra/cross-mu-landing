@@ -90,7 +90,7 @@ body {
     position: absolute;
     inset: 0;
     bottom: -1px;
-    background-image: url('/nav-bg.png');
+    background-image: url('/nav-bg.webp');
     background-size: 1560px;
     background-position: center;
     opacity: 0.8;

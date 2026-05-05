@@ -20,7 +20,7 @@ function NavButton({ href, children }: { href: string; children: React.ReactNode
       href={href}
       className="relative hidden min-w-[100px] items-center justify-center gap-[6px] overflow-hidden rounded-[4px] bg-[#676d83] px-6 py-2 tracking-normal transition-[filter] duration-200 hover:[filter:brightness(1.24)] md:flex"
       style={{
-        backgroundImage: "url('/bg-texture.png')",
+        backgroundImage: "url('/bg-texture.webp')",
         backgroundSize: '400px',
         backgroundPosition: 'center',
       }}
