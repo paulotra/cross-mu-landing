@@ -21,6 +21,16 @@
   }
 }
 
+html,
+body {
+  overflow: hidden;
+  width: 100%;
+}
+
+html {
+  overflow-y: auto;
+}
+
 body {
   background: var(--background);
   color: var(--foreground);
@@ -79,4 +89,17 @@ img {
 .font-philosopher {
   letter-spacing: 0;
   font-weight: bold;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 120s linear infinite;
 }

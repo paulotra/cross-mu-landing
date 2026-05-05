@@ -3,11 +3,13 @@ import Image from 'next/image'
 
 type CardTexturedProps = HTMLAttributes<HTMLDivElement> & {
   corners?: boolean
+  ribbon?: boolean
 }
 
 export default function CardTextured({
   className = '',
   corners = true,
+  ribbon = false,
   children,
   ...props
 }: CardTexturedProps) {
@@ -33,6 +35,15 @@ export default function CardTextured({
             className="absolute top-[2px] right-[2px] -mx-3 -my-3 scale-x-[-1]"
           />
         </>
+      )}
+      {ribbon && (
+        <Image
+          src="/btn/btn-header.png"
+          alt=""
+          width={127}
+          height={30}
+          className="absolute top-[-1px] right-0 left-0 mx-auto -my-4"
+        />
       )}
       {children}
     </div>

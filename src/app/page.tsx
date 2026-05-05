@@ -5,6 +5,8 @@ import TopPlayers from '@/components/Panels/TopPlayers'
 import TopGuilds from '@/components/Panels/TopGuilds'
 import Banner from '@/components/Home/Banner'
 import RecentNews from '@/components/Home/RecentNews'
+import Promotion from '@/components/Panels/Promotion'
+import ScreenShots from '@/components/Home/ScreenShots'
 
 export default async function Home() {
   return (
@@ -19,8 +21,8 @@ export default async function Home() {
           className="absolute inset-0 w-full object-cover object-top-right"
           priority
         />
-        <div className="container flex">
-          <div className="-mt-20 flex max-w-1/2 flex-1 flex-col items-center justify-center gap-y-6">
+        <div className="relative container flex">
+          <div className="relative z-10 -mt-20 flex max-w-1/2 flex-1 flex-col items-center justify-center gap-y-6">
             <div className="relative h-fit w-fit">
               <Image
                 src="/logo-emblem.png"
@@ -60,7 +62,7 @@ export default async function Home() {
             loop
             muted
             playsInline
-            className="absolute right-0 mt-20 mr-16 w-[720px]"
+            className="absolute right-0 mt-20 mr-8 w-[720px]"
             style={{
               maskImage: [
                 'linear-gradient(to right, transparent 0%, black 25%)',
@@ -76,22 +78,34 @@ export default async function Home() {
         </div>
       </section>
       <div className="relative">
-        <Image
-          src="/bg-strip.png"
-          alt=""
-          width={3120}
-          height={5800}
-          className="absolute inset-0 top-[-450px] z-10 w-full opacity-60"
-        />
         <div className="relative z-10 container grid grid-cols-12 gap-x-4 px-5">
           <div className="col-span-4 flex flex-col gap-y-4">
             <LoginForm />
+            <Promotion
+              background="/scenes/dusk.png"
+              icon="/emblems/discord.png"
+              title="Join Our Discord"
+              details="Free cross cash, get updated with the events and updates"
+            />
+            <Promotion
+              background="/scenes/forest.png"
+              icon="/emblems/gift.png"
+              title="Rewards"
+              details="Free cross cash, get updated with the events and updates"
+            />
+            <Promotion
+              background="/scenes/desert.png"
+              icon="/emblems/download.png"
+              title="Download"
+              details="Free cross cash, get updated with the events and updates"
+            />
             <TopPlayers />
             <TopGuilds />
           </div>
           <div className="col-span-8">
             <Banner />
             <RecentNews />
+            <ScreenShots />
           </div>
         </div>
       </div>

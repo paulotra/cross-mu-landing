@@ -1,6 +1,8 @@
 import type { Metadata } from 'next'
 import { Inter, Philosopher } from 'next/font/google'
 import Navbar from '@/components/Navbar'
+import Footer from '@/components/Footer'
+import Image from 'next/image'
 import { AuthProvider } from '@/app/context/AuthContext'
 import './globals.css'
 
@@ -26,14 +28,19 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html
-      lang="en"
-      className={`${inter.variable} ${philosopher.variable} h-full antialiased`}
-    >
-      <body className="min-h-full flex flex-col">
+    <html lang="en" className={`${inter.variable} ${philosopher.variable} h-full antialiased`}>
+      <body className="relative flex min-h-full w-full flex-col">
         <AuthProvider>
           <Navbar />
-          <main>{children}</main>
+          <main className="w-full">{children}</main>
+          <Footer />
+          <Image
+            src="/bg-strip.png"
+            alt=""
+            width={3120}
+            height={5800}
+            className="absolute inset-0 top-80 z-[9] h-full"
+          />
         </AuthProvider>
       </body>
     </html>
