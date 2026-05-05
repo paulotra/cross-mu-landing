@@ -63,7 +63,7 @@ export default function Navbar() {
                 key={href}
                 href={href}
                 className={[
-                  'nav-link cursor-pointer border-r border-[#1D233164] px-5 py-6 text-sm xl:px-6',
+                  'nav-link cursor-pointer border-r border-[#1D233164] px-5 py-6 text-sm lg:px-6 xl:px-7',
                   i === 0 ? 'border-l' : '',
                   pathname === href ? 'nav-link-active' : '',
                 ]
