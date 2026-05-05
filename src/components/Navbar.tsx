@@ -17,7 +17,7 @@ function NavButton({ href, children }: { href: string; children: React.ReactNode
   return (
     <Link
       href={href}
-      className="relative flex min-w-[100px] items-center justify-center gap-[6px] overflow-hidden rounded-[4px] bg-[#676d83] px-6 py-2 tracking-normal"
+      className="relative flex min-w-[100px] items-center justify-center gap-[6px] overflow-hidden rounded-[4px] bg-[#676d83] px-6 py-2 tracking-normal transition-[filter] duration-200 hover:[filter:brightness(1.24)]"
       style={{
         backgroundImage: "url('/bg-texture.png')",
         backgroundSize: '400px',
@@ -59,7 +59,7 @@ export default function Navbar() {
                 key={href}
                 href={href}
                 className={[
-                  'border-r border-[#1D233164] px-6 py-6 text-sm',
+                  'nav-link cursor-pointer border-r border-[#1D233164] px-6 py-6 text-sm',
                   i === 0 ? 'border-l' : '',
                   pathname === href ? 'nav-link-active' : '',
                 ]

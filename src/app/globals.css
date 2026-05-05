@@ -43,6 +43,18 @@ body {
   @apply mx-auto max-w-[1262px];
 }
 
+.nav-link {
+  position: relative;
+
+  &:hover::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.32), rgba(0, 0, 0, 0));
+    pointer-events: none;
+  }
+}
+
 .nav-link-active {
   position: relative;
 

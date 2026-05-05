@@ -22,7 +22,7 @@ export default function Button({
   return (
     <button
       {...props}
-      className={`font-philosopher relative cursor-pointer bg-[#676d83] font-bold whitespace-nowrap text-white [box-shadow:0_12px_32px_rgba(0,0,0,0.40)] [text-shadow:0px_0px_24px_rgba(234,236,243,0.32)] ${variantClasses[variant]} ${className}`}
+      className={`font-philosopher relative cursor-pointer bg-[#676d83] font-bold whitespace-nowrap text-white [box-shadow:0_12px_32px_rgba(0,0,0,0.40)] transition-[filter] duration-200 [text-shadow:0px_0px_24px_rgba(234,236,243,0.32)] hover:[filter:brightness(1.24)] ${variantClasses[variant]} ${className}`}
     >
       <span className="absolute inset-0 overflow-hidden">
         <span
