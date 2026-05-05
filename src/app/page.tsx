@@ -47,7 +47,7 @@ export default async function Home() {
                 alt=""
                 width={608}
                 height={114}
-                className="absolute top-[32px] right-0 left-0 mx-auto"
+                className="absolute right-0 left-0 mx-auto"
               />
               <Button variant="large" type="submit">
                 <Image src="/icons/download.svg" alt="" width={18} height={18} className="" />
