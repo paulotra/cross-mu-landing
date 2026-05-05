@@ -42,11 +42,11 @@ export default function Footer() {
         </div>
 
         {/* Link columns */}
-        <div className="flex gap-2">
+        <div className="flex flex-wrap gap-8 md:gap-2">
           {columns.map(({ title, links }) => (
-            <div key={title} className="flex w-[310px] flex-col gap-8">
+            <div key={title} className="flex w-full flex-col gap-8 pr-5 md:flex-1 md:pr-0">
               {/* Column heading */}
-              <div className="flex items-center gap-3">
+              <div className="flex items-center justify-center gap-3 md:justify-start">
                 <Image
                   src="/gem.png"
                   alt=""
@@ -62,7 +62,7 @@ export default function Footer() {
                   <li key={link}>
                     <a
                       href="#"
-                      className="flex items-center gap-x-5 text-base text-white hover:text-[#78b9ff]"
+                      className="flex items-center justify-center gap-x-5 text-base text-white hover:text-[#78b9ff] md:justify-start"
                     >
                       <span className="ml-2 text-lg text-white">›</span>
                       {link}
@@ -77,12 +77,12 @@ export default function Footer() {
         {/* Bottom bar */}
         <div className="flex flex-col gap-8">
           <Divider />
-          <div className="flex items-center justify-between">
-            <p className="w-[400px] text-sm font-light tracking-[0.28px] text-white">
+          <div className="flex flex-col items-center justify-between gap-y-4 md:flex-row">
+            <p className="w-[400px] text-center text-sm font-light tracking-[0.28px] text-white md:text-left">
               © 2026 - Cross MU Online. All rights reserved.
             </p>
             <Image src="/logo-emblem.png" alt="" width={99} height={66} className="h-14 w-auto" />
-            <p className="w-[400px] text-right text-sm font-light tracking-[0.28px] text-white">
+            <p className="w-[400px] text-center text-sm font-light tracking-[0.28px] text-white md:text-right">
               Designed By Cross Studio Inc.
             </p>
           </div>

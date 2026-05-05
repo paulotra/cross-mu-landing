@@ -47,19 +47,19 @@ export default function Navbar() {
   const pathname = usePathname()
 
   return (
-    <nav className="navbar fixed inset-x-0 top-0 z-100 flex items-center bg-[rgba(37,42,60,0.24)]">
+    <nav className="navbar fixed inset-x-0 top-0 z-100 flex items-center bg-[rgba(37,42,60,0.24)] py-3 lg:py-0">
       <div className="relative container flex w-full items-center justify-between px-4">
         <div className="flex items-center gap-x-7">
           <Link href="/">
             <Logo />
           </Link>
-          <div className="flex items-center">
+          <div className="hidden items-center lg:flex">
             {links.map(({ href, label }, i) => (
               <Link
                 key={href}
                 href={href}
                 className={[
-                  'nav-link cursor-pointer border-r border-[#1D233164] px-6 py-6 text-sm',
+                  'nav-link cursor-pointer border-r border-[#1D233164] px-5 py-6 text-sm xl:px-6',
                   i === 0 ? 'border-l' : '',
                   pathname === href ? 'nav-link-active' : '',
                 ]

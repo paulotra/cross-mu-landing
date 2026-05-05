@@ -1,5 +1,4 @@
 import Image from 'next/image'
-import dynamic from 'next/dynamic'
 import Button from '@/components/Button'
 import HeroParticles from '@/components/HeroParticles'
 import LoginForm from '@/components/Panels/LoginForm'
@@ -13,7 +12,7 @@ import ScreenShots from '@/components/Home/ScreenShots'
 export default async function Home() {
   return (
     <div>
-      <section className="relative flex min-h-[800px] w-full overflow-visible">
+      <section className="relative flex min-h-[440px] w-full overflow-visible md:min-h-[800px]">
         <HeroParticles />
         {/* Base background image */}
         <Image
@@ -25,8 +24,8 @@ export default async function Home() {
           priority
         />
         <div className="relative container flex">
-          <div className="relative z-10 -mt-20 flex max-w-1/2 flex-1 flex-col items-center justify-center gap-y-6">
-            <div className="relative h-fit w-fit">
+          <div className="relative z-10 -mt-20 flex flex-1 flex-col items-center justify-center gap-y-6 lg:max-w-1/2">
+            <div className="relative mt-20 hidden h-fit w-fit pt-20 md:block lg:mt-0 lg:pt-0">
               <Image
                 src="/logo-emblem.png"
                 alt=""
@@ -39,10 +38,10 @@ export default async function Home() {
                 alt=""
                 width={952}
                 height={952}
-                className="relative h-auto max-w-[476px]"
+                className="relative h-auto max-w-[360px] lg:max-w-[476px]"
               />
             </div>
-            <div className="relative flex items-center gap-x-8">
+            <div className="relative top-30 flex flex-col items-center gap-8 md:flex-row">
               <Image
                 src="/shadow.svg"
                 alt=""
@@ -73,7 +72,7 @@ export default async function Home() {
             loop
             muted
             playsInline
-            className="absolute right-0 mt-20 mr-8 w-[720px]"
+            className="absolute right-0 left-[-40px] mx-auto -mt-10 min-w-[520px] lg:left-auto lg:mt-20 lg:mr-8 lg:w-[720px]"
             style={{
               maskImage: [
                 'linear-gradient(to right, transparent 0%, black 25%)',
@@ -89,8 +88,8 @@ export default async function Home() {
         </div>
       </section>
       <div className="relative">
-        <div className="relative z-10 container grid grid-cols-12 gap-x-4 px-5">
-          <div className="col-span-4 flex flex-col gap-y-4">
+        <div className="relative z-10 container grid-cols-12 gap-x-4 px-5 lg:grid">
+          <div className="flex flex-col gap-y-4 lg:col-span-4">
             <LoginForm />
             <Promotion
               background="/scenes/dusk.png"
@@ -113,7 +112,7 @@ export default async function Home() {
             <TopPlayers />
             <TopGuilds />
           </div>
-          <div className="col-span-8">
+          <div className="mt-4 md:mt-0 lg:col-span-8">
             <Banner />
             <RecentNews />
             <ScreenShots />
