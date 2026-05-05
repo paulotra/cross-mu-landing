@@ -37,7 +37,8 @@
       "Bash(curl -sL \"https://www.figma.com/api/mcp/asset/4ac1bee6-a4e5-4d2d-864b-77acf1deae3d\" -o /tmp/kanturu-check)",
       "Bash(curl -sL \"https://www.figma.com/api/mcp/asset/17069dfc-18a2-4fbc-9485-9b67cdde0241\" -o /tmp/img393-check)",
       "Bash(curl -sL \"https://www.figma.com/api/mcp/asset/15c93ef5-4c63-447a-8deb-24ba19922782\" -o /tmp/news1-check)",
-      "Bash(curl -sL \"https://www.figma.com/api/mcp/asset/689e0b22-3d79-43b1-9074-bc27d5cddb83\" -o /Users/paulo/Sites/cross-mu-landing/public/screenshots/1.png)"
+      "Bash(curl -sL \"https://www.figma.com/api/mcp/asset/689e0b22-3d79-43b1-9074-bc27d5cddb83\" -o /Users/paulo/Sites/cross-mu-landing/public/screenshots/1.png)",
+      "Bash(node -e \"require\\('gsap'\\); console.log\\('ok'\\)\")"
     ],
     "additionalDirectories": [
       "/private/tmp"
