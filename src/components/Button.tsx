@@ -71,7 +71,9 @@ export default function Button({
           className="absolute top-[-1px] right-0 left-0 mx-auto -my-4"
         />
       )}
-      <span className="relative tracking-normal">{children}</span>
+      <span className="relative flex items-center justify-center gap-x-3 tracking-normal">
+        {children}
+      </span>
     </button>
   )
 }

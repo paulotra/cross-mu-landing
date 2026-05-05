@@ -1,5 +1,7 @@
 import Image from 'next/image'
+import dynamic from 'next/dynamic'
 import Button from '@/components/Button'
+import HeroParticles from '@/components/HeroParticles'
 import LoginForm from '@/components/Panels/LoginForm'
 import TopPlayers from '@/components/Panels/TopPlayers'
 import TopGuilds from '@/components/Panels/TopGuilds'
@@ -12,6 +14,7 @@ export default async function Home() {
   return (
     <div>
       <section className="relative flex min-h-[800px] w-full overflow-visible">
+        <HeroParticles />
         {/* Base background image */}
         <Image
           src="/home/hero.png"
@@ -48,9 +51,17 @@ export default async function Home() {
                 className="absolute top-[32px] right-0 left-0 mx-auto"
               />
               <Button variant="large" type="submit">
+                <Image src="/icons/download.svg" alt="" width={18} height={18} className="" />
                 Download Now
               </Button>
               <Button variant="large" type="submit">
+                <Image
+                  src="/icons/discord.svg"
+                  alt=""
+                  width={24}
+                  height={24}
+                  className="top relative"
+                />
                 Join Discord
               </Button>
             </div>
