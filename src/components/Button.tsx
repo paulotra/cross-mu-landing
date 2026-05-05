@@ -1,14 +1,15 @@
 import Image from 'next/image'
 import { ButtonHTMLAttributes } from 'react'
 
-type ButtonVariant = 'default' | 'large'
+type ButtonVariant = 'default' | 'medium' | 'large'
 
 type ButtonProps = ButtonHTMLAttributes<HTMLButtonElement> & {
   variant?: ButtonVariant
 }
 
 const variantClasses: Record<ButtonVariant, string> = {
-  default: 'min-w-[100px] px-5 py-3 text-base',
+  default: 'min-w-[100px] px-5 py-2 text-sm',
+  medium: 'min-w-[160px] px-5 py-3 text-base',
   large: 'min-w-[280px] px-6 py-6 text-2xl',
 }
 

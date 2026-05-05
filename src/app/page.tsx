@@ -4,6 +4,7 @@ import LoginForm from '@/components/Panels/LoginForm'
 import TopPlayers from '@/components/Panels/TopPlayers'
 import TopGuilds from '@/components/Panels/TopGuilds'
 import Banner from '@/components/Home/Banner'
+import RecentNews from '@/components/Home/RecentNews'
 
 export default async function Home() {
   return (
@@ -90,6 +91,7 @@ export default async function Home() {
           </div>
           <div className="col-span-8">
             <Banner />
+            <RecentNews />
           </div>
         </div>
       </div>

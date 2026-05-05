@@ -4,7 +4,7 @@ import CardTextured from '@/components/CardTextured'
 
 export default function LoginForm() {
   return (
-    <CardTextured className="col-span-4 pb-10">
+    <CardTextured corners={true} className="col-span-4 pb-10">
       <h3 className="font-philosopher mb-6 flex items-center justify-center gap-x-4 text-xl font-bold">
         <Image src="/gem.png" alt="" width={24} height={16} />
         Account Panel

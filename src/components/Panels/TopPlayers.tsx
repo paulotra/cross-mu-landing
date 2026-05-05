@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import CardTextured from '@/components/CardTextured'
+import Divider from '@/components/Divider'
 
 const players = [
   { rank: 1, name: 'Lorem', kills: 325, portrait: '/characters/class-1.png', w: 500, h: 440 },
@@ -9,17 +10,9 @@ const players = [
   { rank: 5, name: 'Amet', kills: 43, portrait: '/characters/class-4.png', w: 250, h: 220 },
 ]
 
-function Divider() {
-  return (
-    <div className="relative h-px w-full mix-blend-screen">
-      <Image src="/ui-line.svg" alt="" fill className="object-cover" />
-    </div>
-  )
-}
-
 export default function TopPlayers() {
   return (
-    <CardTextured className="pb-8">
+    <CardTextured corners={true} className="pb-8">
       <div className="mb-1 flex items-center justify-between">
         <h3 className="font-philosopher flex items-center gap-x-3 text-xl font-bold">
           <Image src="/gem.png" className="rotate-90" alt="" width={24} height={16} />
