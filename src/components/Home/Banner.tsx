@@ -2,13 +2,13 @@ import Image from 'next/image'
 
 export default function KanturuAwakens() {
   return (
-    <div className="relative flex h-[303px] flex-col items-start justify-between overflow-hidden bg-[url('/home/banner.png')] bg-cover bg-[position:0_0] p-8">
+    <div className="relative flex h-[303px] flex-col items-start justify-between overflow-hidden bg-[url('/home/banner.png')] bg-cover bg-[position:center_right] p-8">
       {/* Background character image */}
 
       {/* Top: title + tagline */}
       <div className="relative flex flex-col gap-4">
         <Image src="/kanturu-a.svg" alt="Kanturu Awakens" width={231} height={119} />
-        <p className="-mt-3 text-base whitespace-nowrap text-white">
+        <p className="-mt-3 text-base text-white">
           Face Nightmare. Challenge the Core. Claim Divine Rewards.
         </p>
       </div>
