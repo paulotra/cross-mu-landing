@@ -32,7 +32,7 @@ function NavButton({ href, children }: { href: string; children: React.ReactNode
 function GradientText({ children }: { children: React.ReactNode }) {
   return (
     <span
-      className="relative bg-clip-text font-[family-name:var(--font-philosopher)] text-base font-bold whitespace-nowrap text-transparent"
+      className="font-philosopher relative bg-clip-text text-base font-bold whitespace-nowrap text-transparent"
       style={{
         backgroundImage: 'linear-gradient(94deg, rgb(192,243,255) 0%, rgb(126,181,247) 100%)',
         textShadow: '0px 0px 24px rgba(234,236,243,0.32)',

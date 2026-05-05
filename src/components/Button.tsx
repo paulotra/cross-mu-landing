@@ -8,8 +8,8 @@ type ButtonProps = ButtonHTMLAttributes<HTMLButtonElement> & {
 }
 
 const variantClasses: Record<ButtonVariant, string> = {
-  default: 'min-w-[100px] px-6 py-[14px] text-base',
-  large: 'min-w-[280px] px-6 py-[22px] text-2xl',
+  default: 'min-w-[100px] px-5 py-3 text-base',
+  large: 'min-w-[280px] px-6 py-6 text-2xl',
 }
 
 export default function Button({
@@ -61,14 +61,16 @@ export default function Button({
         height={34}
         className="absolute right-0 bottom-0 -mx-3 -my-4 scale-x-[-1]"
       />
-      <Image
-        src="/btn/btn-header.png"
-        alt=""
-        width={127}
-        height={30}
-        className="absolute top-[-1px] right-0 left-0 mx-auto -my-4"
-      />
-      <span className="relative">{children}</span>
+      {variant === 'large' && (
+        <Image
+          src="/btn/btn-header.png"
+          alt=""
+          width={127}
+          height={30}
+          className="absolute top-[-1px] right-0 left-0 mx-auto -my-4"
+        />
+      )}
+      <span className="relative tracking-normal">{children}</span>
     </button>
   )
 }

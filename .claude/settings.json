@@ -17,7 +17,17 @@
       "Bash(identify /Users/paulo/Sites/cross-mu-landing/public/logo-icon.png)",
       "Bash(identify /Users/paulo/Sites/cross-mu-landing/public/home/hero.png)",
       "Bash(sips -g pixelWidth -g pixelHeight /Users/paulo/Sites/cross-mu-landing/public/home/hero.png)",
-      "Bash(curl -sL \"https://www.figma.com/api/mcp/asset/f3846d3a-353c-42bb-8113-efedf686d918\" -o /Users/paulo/Sites/cross-mu-landing/public/btn-texture.png)"
+      "Bash(curl -sL \"https://www.figma.com/api/mcp/asset/f3846d3a-353c-42bb-8113-efedf686d918\" -o /Users/paulo/Sites/cross-mu-landing/public/btn-texture.png)",
+      "Bash(curl -sL \"https://www.figma.com/api/mcp/asset/c10d2404-cb5c-4320-b89b-d73b7c739d9c\" -o /Users/paulo/Sites/cross-mu-landing/public/characters/class-1.png)",
+      "Bash(curl -sL \"https://www.figma.com/api/mcp/asset/8a7f7d53-0aa0-432f-ba0c-dbfc45f6b255\" -o /Users/paulo/Sites/cross-mu-landing/public/characters/class-2.png)",
+      "Bash(curl -sL \"https://www.figma.com/api/mcp/asset/2f69ea82-455f-4377-9ec0-b4338e8fb95f\" -o /Users/paulo/Sites/cross-mu-landing/public/characters/class-3.png)",
+      "Bash(curl -sL \"https://www.figma.com/api/mcp/asset/469c2083-2adf-4ef6-9496-02688f07a208\" -o /Users/paulo/Sites/cross-mu-landing/public/characters/class-4.png)",
+      "Bash(curl -sL \"https://www.figma.com/api/mcp/asset/c1940bc1-580f-421b-b145-92a9f3ed5f75\" -o /Users/paulo/Sites/cross-mu-landing/public/ui-line.png)",
+      "Bash(curl -sL \"https://www.figma.com/api/mcp/asset/2242893f-a2f4-4707-814b-79dd052e956d\" -o /tmp/timer-check)",
+      "Read(//tmp/**)"
+    ],
+    "additionalDirectories": [
+      "/private/tmp"
     ]
   }
 }
