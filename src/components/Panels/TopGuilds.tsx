@@ -3,11 +3,11 @@ import CardTextured from '@/components/CardTextured'
 import Divider from '@/components/Divider'
 
 const guilds = [
-  { rank: 1, name: 'Invictus', score: 8919, emblem: '/guilds/guild-1.png' },
-  { rank: 2, name: 'Navi', score: 7256, emblem: '/guilds/guild-2.png' },
-  { rank: 3, name: 'NiceBro', score: 1856, emblem: '/guilds/guild-3.png' },
-  { rank: 4, name: 'Supremo', score: 456, emblem: '/guilds/guild-4.png' },
-  { rank: 5, name: 'C-Corp', score: 126, emblem: '/guilds/guild-5.png' },
+  { rank: 1, name: 'Invictus', score: 8919, emblem: '/guilds/guild-1.webp' },
+  { rank: 2, name: 'Navi', score: 7256, emblem: '/guilds/guild-2.webp' },
+  { rank: 3, name: 'NiceBro', score: 1856, emblem: '/guilds/guild-3.webp' },
+  { rank: 4, name: 'Supremo', score: 456, emblem: '/guilds/guild-4.webp' },
+  { rank: 5, name: 'C-Corp', score: 126, emblem: '/guilds/guild-5.webp' },
 ]
 
 export default function TopGuilds() {

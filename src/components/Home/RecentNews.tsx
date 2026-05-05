@@ -17,28 +17,28 @@ export default function RecentNews() {
         <NewsCard
           title="Today big updates have been applied to server! Enjoy the game!"
           description="New epic wings for Wings of Darkness for Muse Elfves for 4th class. Features: Grow Lance Archangel's Absolute Weapon."
-          image="/news/1.png"
+          image="/news/1.webp"
           day={12}
           date="/05/2026"
         />
         <NewsCard
           title="Today big updates have been applied to server! Enjoy the game!"
           description="New epic wings for Wings of Darkness for Muse Elfves for 4th class. Features: Grow Lance Archangel's Absolute Weapon."
-          image="/news/1.png"
+          image="/news/1.webp"
           day={12}
           date="/05/2026"
         />
         <NewsCard
           title="Today big updates have been applied to server! Enjoy the game!"
           description="New epic wings for Wings of Darkness for Muse Elfves for 4th class. Features: Grow Lance Archangel's Absolute Weapon."
-          image="/news/1.png"
+          image="/news/1.webp"
           day={12}
           date="/05/2026"
         />
         <NewsCard
           title="Today big updates have been applied to server! Enjoy the game!"
           description="New epic wings for Wings of Darkness for Muse Elfves for 4th class. Features: Grow Lance Archangel's Absolute Weapon."
-          image="/news/1.png"
+          image="/news/1.webp"
           day={12}
           date="/05/2026"
         />

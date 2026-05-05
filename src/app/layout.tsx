@@ -3,6 +3,7 @@ import { Inter, Philosopher } from 'next/font/google'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import SmoothScroll from '@/components/SmoothScroll'
+import PageLoader from '@/components/PageLoader'
 import Image from 'next/image'
 import { AuthProvider } from '@/app/context/AuthContext'
 import './globals.css'
@@ -30,7 +31,18 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${inter.variable} ${philosopher.variable} h-full antialiased`}>
+      <head>
+        {/* video */}
+        <link rel="preload" href="/home/character.webm" as="video" type="video/webm" />
+        {/* top 5 heaviest images */}
+        <link rel="preload" href="/bg-scales.webp" as="image" type="image/webp" />
+        <link rel="preload" href="/bg-texture.webp" as="image" type="image/webp" />
+        <link rel="preload" href="/logo-emblem.webp" as="image" type="image/webp" />
+        <link rel="preload" href="/home/hero.webp" as="image" type="image/webp" />
+        <link rel="preload" href="/nav-bg.webp" as="image" type="image/webp" />
+      </head>
       <body className="relative flex min-h-full w-full flex-col">
+        <PageLoader />
         <AuthProvider>
           <Navbar />
           <SmoothScroll>
@@ -41,7 +53,7 @@ export default function RootLayout({
               alt=""
               width={3120}
               height={5800}
-              className="absolute inset-0 top-80 z-[9] h-full"
+              className="absolute inset-0 top-136 z-[9] h-full"
             />
           </SmoothScroll>
         </AuthProvider>

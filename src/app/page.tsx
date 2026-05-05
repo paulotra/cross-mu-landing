@@ -16,7 +16,7 @@ export default async function Home() {
         <HeroParticles />
         {/* Base background image */}
         <Image
-          src="/home/hero.png"
+          src="/home/hero.webp"
           alt=""
           width={3120}
           height={2646}
@@ -83,6 +83,7 @@ export default async function Home() {
               maskComposite: 'intersect',
             }}
           >
+            <source src="/home/character.webm" type="video/webm" />
             <source src="/home/character.mp4" type="video/mp4" />
           </video>
         </div>
@@ -92,20 +93,20 @@ export default async function Home() {
           <div className="flex flex-col gap-y-4 lg:col-span-4">
             <LoginForm />
             <Promotion
-              background="/scenes/dusk.png"
-              icon="/emblems/discord.png"
+              background="/scenes/dusk.webp"
+              icon="/emblems/discord.webp"
               title="Join Our Discord"
               details="Free cross cash, get updated with the events and updates"
             />
             <Promotion
-              background="/scenes/forest.png"
-              icon="/emblems/gift.png"
+              background="/scenes/forest.webp"
+              icon="/emblems/gift.webp"
               title="Rewards"
               details="Free cross cash, get updated with the events and updates"
             />
             <Promotion
-              background="/scenes/desert.png"
-              icon="/emblems/download.png"
+              background="/scenes/desert.webp"
+              icon="/emblems/download.webp"
               title="Download"
               details="Free cross cash, get updated with the events and updates"
             />

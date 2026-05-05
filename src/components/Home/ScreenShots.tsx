@@ -2,7 +2,7 @@ import Image from 'next/image'
 import Divider from '@/components/Divider'
 import CardTextured from '@/components/CardTextured'
 
-const images = Array(8).fill('/screenshots/1.png')
+const images = Array(8).fill('/screenshots/1.webp')
 
 export default function ScreenShots() {
   return (

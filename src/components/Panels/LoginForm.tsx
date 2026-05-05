@@ -10,7 +10,7 @@ export default function LoginForm() {
         Account Panel
         <Image src="/gem.webp" alt="" width={24} height={16} />
       </h3>
-      <form action="" className="gap1-y-5 flex flex-col">
+      <form action="" className="flex flex-col gap-y-5">
         <div className="relative bg-[#00000030]">
           <span className="absolute right-0 bottom-[-4px] left-0 h-[4px] bg-[url('/btn/btn-border-b.svg')]"></span>
           <input

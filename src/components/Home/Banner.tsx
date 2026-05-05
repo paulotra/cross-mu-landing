@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 export default function KanturuAwakens() {
   return (
-    <div className="relative flex h-[303px] flex-col items-start justify-between overflow-hidden bg-[url('/home/banner.png')] bg-cover bg-[position:center_right] p-8">
+    <div className="relative flex h-[303px] flex-col items-start justify-between overflow-hidden bg-[url('/home/banner.webp')] bg-cover bg-[position:center_right] p-8">
       {/* Background character image */}
 
       {/* Top: title + tagline */}

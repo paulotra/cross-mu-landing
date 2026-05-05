@@ -38,7 +38,7 @@ export default function CardTextured({
       )}
       {ribbon && (
         <Image
-          src="/btn/btn-header.png"
+          src="/btn/btn-header.webp"
           alt=""
           width={127}
           height={30}

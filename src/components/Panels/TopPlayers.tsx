@@ -3,11 +3,11 @@ import CardTextured from '@/components/CardTextured'
 import Divider from '@/components/Divider'
 
 const players = [
-  { rank: 1, name: 'Lorem', kills: 325, portrait: '/characters/class-1.png', w: 500, h: 440 },
-  { rank: 2, name: 'Ipsum', kills: 280, portrait: '/characters/class-2.png', w: 250, h: 220 },
-  { rank: 3, name: 'Dolor', kills: 258, portrait: '/characters/class-3.png', w: 250, h: 220 },
-  { rank: 4, name: 'Seit', kills: 154, portrait: '/characters/class-1.png', w: 500, h: 440 },
-  { rank: 5, name: 'Amet', kills: 43, portrait: '/characters/class-4.png', w: 250, h: 220 },
+  { rank: 1, name: 'Lorem', kills: 325, portrait: '/characters/class-1.webp', w: 500, h: 440 },
+  { rank: 2, name: 'Ipsum', kills: 280, portrait: '/characters/class-2.webp', w: 250, h: 220 },
+  { rank: 3, name: 'Dolor', kills: 258, portrait: '/characters/class-3.webp', w: 250, h: 220 },
+  { rank: 4, name: 'Seit', kills: 154, portrait: '/characters/class-1.webp', w: 500, h: 440 },
+  { rank: 5, name: 'Amet', kills: 43, portrait: '/characters/class-4.webp', w: 250, h: 220 },
 ]
 
 export default function TopPlayers() {

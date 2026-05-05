@@ -35,28 +35,28 @@ export default function Button({
       <span className="absolute top-0 right-0 bottom-0 w-[4px] bg-[url('/btn/btn-border-r.svg')]"></span>
       <span className="absolute right-0 bottom-[-4px] left-0 h-[4px] bg-[url('/btn/btn-border-b.svg')]"></span>
       <Image
-        src="/btn/btn-corners.png"
+        src="/btn/btn-corners.webp"
         alt=""
         width={50}
         height={34}
         className="absolute bottom-0 left-0 -mx-3 -my-4"
       />
       <Image
-        src="/btn/btn-corners.png"
+        src="/btn/btn-corners.webp"
         alt=""
         width={50}
         height={34}
         className="absolute top-0 right-0 -mx-3 -my-4 rotate-180"
       />
       <Image
-        src="/btn/btn-corners.png"
+        src="/btn/btn-corners.webp"
         alt=""
         width={50}
         height={34}
         className="absolute top-0 left-0 -mx-3 -my-4 scale-x-[-1] rotate-180"
       />
       <Image
-        src="/btn/btn-corners.png"
+        src="/btn/btn-corners.webp"
         alt=""
         width={50}
         height={34}
@@ -64,7 +64,7 @@ export default function Button({
       />
       {variant === 'large' && (
         <Image
-          src="/btn/btn-header.png"
+          src="/btn/btn-header.webp"
           alt=""
           width={127}
           height={30}

@@ -49,7 +49,9 @@ export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false)
 
   return (
-    <nav className={`navbar fixed inset-x-0 top-0 z-100 flex items-center bg-[rgba(37,42,60,0.24)] py-3 lg:py-0${menuOpen ? ' menu-open' : ''}`}>
+    <nav
+      className={`navbar fixed inset-x-0 top-0 z-100 flex items-center bg-[rgba(37,42,60,0.24)] py-3 lg:py-0 ${menuOpen ? 'menu-open' : ''}`}
+    >
       <div className="relative container flex w-full items-center justify-between px-4">
         <div className="flex items-center gap-x-7">
           <Link href="/">
