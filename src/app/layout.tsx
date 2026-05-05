@@ -3,7 +3,6 @@ import { Inter, Philosopher } from 'next/font/google'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import SmoothScroll from '@/components/SmoothScroll'
-import PageLoader from '@/components/PageLoader'
 import Image from 'next/image'
 import { AuthProvider } from '@/app/context/AuthContext'
 import './globals.css'
@@ -42,8 +41,7 @@ export default function RootLayout({
         <link rel="preload" href="/nav-bg.webp" as="image" type="image/webp" />
       </head>
       <body className="relative flex min-h-full w-full flex-col">
-        <PageLoader />
-        <AuthProvider>
+<AuthProvider>
           <Navbar />
           <SmoothScroll>
             <main className="w-full">{children}</main>
