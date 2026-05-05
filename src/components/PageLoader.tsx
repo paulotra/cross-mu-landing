@@ -23,7 +23,7 @@ export default function PageLoader() {
     }
     window.addEventListener('load', hide)
     return () => window.removeEventListener('load', hide)
-  }, [])
+  }, [gone])
 
   if (gone) return null
 
