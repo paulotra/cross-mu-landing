@@ -2,10 +2,11 @@ import Image from 'next/image'
 import Button from '@/components/Button'
 import LoginForm from '@/components/Panels/LoginForm'
 import TopPlayers from '@/components/Panels/TopPlayers'
+import TopGuilds from '@/components/Panels/TopGuilds'
 
 export default async function Home() {
   return (
-    <div className="min-h-[1000px]">
+    <div>
       <section className="relative flex h-screen min-h-[800px] w-full overflow-visible">
         {/* Base background image */}
         <Image
@@ -78,12 +79,13 @@ export default async function Home() {
           alt=""
           width={3120}
           height={5800}
-          className="absolute inset-0 top-[-450px] z-10 w-full"
+          className="absolute inset-0 top-[-450px] z-10 w-full opacity-60"
         />
         <div className="relative z-10 container grid grid-cols-12 gap-x-4 px-5">
           <div className="col-span-4 flex flex-col gap-y-4">
             <LoginForm />
             <TopPlayers />
+            <TopGuilds />
           </div>
           <div className="col-span-8 bg-white p-8"></div>
         </div>

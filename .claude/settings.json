@@ -24,7 +24,16 @@
       "Bash(curl -sL \"https://www.figma.com/api/mcp/asset/469c2083-2adf-4ef6-9496-02688f07a208\" -o /Users/paulo/Sites/cross-mu-landing/public/characters/class-4.png)",
       "Bash(curl -sL \"https://www.figma.com/api/mcp/asset/c1940bc1-580f-421b-b145-92a9f3ed5f75\" -o /Users/paulo/Sites/cross-mu-landing/public/ui-line.png)",
       "Bash(curl -sL \"https://www.figma.com/api/mcp/asset/2242893f-a2f4-4707-814b-79dd052e956d\" -o /tmp/timer-check)",
-      "Read(//tmp/**)"
+      "Read(//tmp/**)",
+      "Bash(curl -sL \"https://www.figma.com/api/mcp/asset/6a5a9d3f-357d-4ae7-837f-50e35ead4e53\" -o /Users/paulo/Sites/cross-mu-landing/public/guilds/guild-1.png)",
+      "Bash(curl -sL \"https://www.figma.com/api/mcp/asset/4dbfab95-48db-4842-8e39-72bf05b802d7\" -o /Users/paulo/Sites/cross-mu-landing/public/guilds/guild-2.png)",
+      "Bash(curl -sL \"https://www.figma.com/api/mcp/asset/141651d7-56b9-4b2f-a191-f2da983c05d4\" -o /Users/paulo/Sites/cross-mu-landing/public/guilds/guild-3.png)",
+      "Bash(curl -sL \"https://www.figma.com/api/mcp/asset/b60ec5a8-2d31-4694-904c-52ef7cf712d6\" -o /Users/paulo/Sites/cross-mu-landing/public/guilds/guild-4.png)",
+      "Bash(curl -sL \"https://www.figma.com/api/mcp/asset/826495d0-0a5b-4ed8-a49e-92e1533e46c1\" -o /Users/paulo/Sites/cross-mu-landing/public/guilds/guild-1.png)",
+      "Bash(curl -sL \"https://www.figma.com/api/mcp/asset/e690b2ae-f7db-45fd-a05c-c1621961d895\" -o /Users/paulo/Sites/cross-mu-landing/public/guilds/guild-2.png)",
+      "Bash(curl -sL \"https://www.figma.com/api/mcp/asset/2421d9d2-e4ab-410b-bf53-22ad708c21dd\" -o /Users/paulo/Sites/cross-mu-landing/public/guilds/guild-3.png)",
+      "Bash(curl -sL \"https://www.figma.com/api/mcp/asset/62cce361-3672-44e1-8b7c-c9ffc306d8da\" -o /Users/paulo/Sites/cross-mu-landing/public/guilds/guild-4.png)",
+      "Bash(curl -sL \"https://www.figma.com/api/mcp/asset/1208205f-dd3f-49ee-bc49-8048af064f97\" -o /Users/paulo/Sites/cross-mu-landing/public/guilds/guild-5.png)"
     ],
     "additionalDirectories": [
       "/private/tmp"

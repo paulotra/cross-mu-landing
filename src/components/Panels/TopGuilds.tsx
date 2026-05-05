@@ -1,12 +1,12 @@
 import Image from 'next/image'
 import CardTextured from '@/components/CardTextured'
 
-const players = [
-  { rank: 1, name: 'Lorem', kills: 325, portrait: '/characters/class-1.png', w: 500, h: 440 },
-  { rank: 2, name: 'Ipsum', kills: 280, portrait: '/characters/class-2.png', w: 250, h: 220 },
-  { rank: 3, name: 'Dolor', kills: 258, portrait: '/characters/class-3.png', w: 250, h: 220 },
-  { rank: 4, name: 'Seit', kills: 154, portrait: '/characters/class-1.png', w: 500, h: 440 },
-  { rank: 5, name: 'Amet', kills: 43, portrait: '/characters/class-4.png', w: 250, h: 220 },
+const guilds = [
+  { rank: 1, name: 'Invictus', score: 8919, emblem: '/guilds/guild-1.png' },
+  { rank: 2, name: 'Navi', score: 7256, emblem: '/guilds/guild-2.png' },
+  { rank: 3, name: 'NiceBro', score: 1856, emblem: '/guilds/guild-3.png' },
+  { rank: 4, name: 'Supremo', score: 456, emblem: '/guilds/guild-4.png' },
+  { rank: 5, name: 'C-Corp', score: 126, emblem: '/guilds/guild-5.png' },
 ]
 
 function Divider() {
@@ -17,17 +17,17 @@ function Divider() {
   )
 }
 
-export default function TopPlayers() {
+export default function TopGuilds() {
   return (
     <CardTextured className="pb-8">
       <div className="mb-1 flex items-center justify-between">
         <h3 className="font-philosopher flex items-center gap-x-3 text-xl font-bold">
           <Image src="/gem.png" className="rotate-90" alt="" width={24} height={16} />
-          Top Players
+          Top Guilds
         </h3>
         <Image src="/logo-icon-small.png" alt="" width={28} height={38} />
       </div>
-      <p className="mb-6 text-xs">The best players of Cross MU Online</p>
+      <p className="mb-6 text-xs">The best guilds of Cross MU Online</p>
 
       <Divider />
 
@@ -35,25 +35,25 @@ export default function TopPlayers() {
       <div className="mt-3 mb-2 flex items-center justify-between text-[13px] font-light tracking-[0.28px] text-[#78b9ff]">
         <span className="w-[80px]">#</span>
         <span className="flex-1">Name</span>
-        <span className="flex-1 text-right">Kills</span>
+        <span className="flex-1 text-right">Score</span>
       </div>
 
       {/* Rows */}
       <div className="flex flex-col gap-y-3">
-        {players.map(({ rank, name, kills, portrait, w, h }) => (
+        {guilds.map(({ rank, name, score, emblem }) => (
           <div key={rank} className="flex items-center justify-between text-sm text-white">
             <div className="flex w-[80px] items-center gap-x-3">
               <span className="w-4 font-light">{rank}.</span>
               <Image
-                src={portrait}
+                src={emblem}
                 alt={name}
-                width={w}
-                height={h}
-                className="h-[16px] w-[18px] object-cover"
+                width={64}
+                height={64}
+                className="h-[16px] w-[16px] object-cover"
               />
             </div>
             <span className="flex-1 font-light">{name}</span>
-            <span className="flex-1 text-right font-medium">{kills}</span>
+            <span className="flex-1 text-right font-medium">{score}</span>
           </div>
         ))}
       </div>
