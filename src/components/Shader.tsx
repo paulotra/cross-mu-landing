@@ -5,7 +5,7 @@ import { Shader, FilmGrain, FlowingGradient, Fog, SolidColor } from 'shaders/rea
 export default function ShaderEffect() {
   return (
     <div className="">
-      <Shader className="fixed h-screen w-screen opacity-80">
+      <Shader className="fixed h-screen w-screen min-w-[800px] opacity-80">
         <SolidColor color="#0b0a1e" />
 
         <Fog

@@ -54,7 +54,7 @@ export default function RootLayout({
             alt=""
             width={3120}
             height={5800}
-            className="stripped absolute top-0 right-0 -left-440 z-[9] mx-auto h-full max-w-none md:top-136 md:left-0"
+            className="stripped absolute right-0 -bottom-50 -left-440 z-[9] mx-auto h-full max-w-none md:top-0 md:top-136 md:bottom-auto md:left-0"
           />
         </AuthProvider>
       </body>
