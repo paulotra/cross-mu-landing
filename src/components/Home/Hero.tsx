@@ -54,7 +54,7 @@ export default function Hero() {
         alt=""
         width={3120}
         height={2646}
-        className="absolute inset-0 w-full object-cover object-top-right"
+        className="absolute inset-0 w-full object-cover object-top-right opacity-90"
         priority
       />
       <div className="relative container flex">

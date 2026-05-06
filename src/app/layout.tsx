@@ -44,18 +44,17 @@ export default function RootLayout({
       <body className="relative flex min-h-full w-full flex-col">
         <AuthProvider>
           <Navbar />
+          {/* Base background image */}
           <Shader />
-          <SmoothScroll>
-            <main className="w-full">{children}</main>
-            <Footer />
-            <Image
-              src="/bg-stripped.webp"
-              alt=""
-              width={3120}
-              height={5800}
-              className="stripped absolute top-0 right-0 -left-440 z-[9] mx-auto h-full max-w-none md:top-136 md:left-0"
-            />
-          </SmoothScroll>
+          <main className="w-full">{children}</main>
+          <Footer />
+          <Image
+            src="/bg-stripped.webp"
+            alt=""
+            width={3120}
+            height={5800}
+            className="stripped absolute top-0 right-0 -left-440 z-[9] mx-auto h-full max-w-none md:top-136 md:left-0"
+          />
         </AuthProvider>
       </body>
     </html>

@@ -34,6 +34,7 @@ body {
 html {
   filter: contrast(1.07) brightness(1.02);
   overflow-y: auto;
+  scroll-behavior: smooth;
 }
 
 body {
