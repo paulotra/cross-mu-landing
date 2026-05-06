@@ -5,6 +5,7 @@ import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import Image from 'next/image'
 import { AuthProvider } from '@/app/context/AuthContext'
+import PageReveal from '@/components/PageReveal'
 import './globals.css'
 
 const inter = Inter({
@@ -41,6 +42,7 @@ export default function RootLayout({
         <link rel="preload" href="/nav-bg.webp" as="image" type="image/webp" />
       </head>
       <body className="relative flex min-h-full w-full flex-col">
+        <PageReveal />
         <AuthProvider>
           <Navbar />
           {/* Base background image */}
