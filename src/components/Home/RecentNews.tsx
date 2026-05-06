@@ -6,7 +6,7 @@ import Button from '@/components/Button'
 export default function RecentNews() {
   return (
     <div>
-      <div className="mt-6 flex items-center gap-x-4">
+      <div className="scrub mt-6 flex items-center gap-x-4">
         <Divider />
         <Image src="/gem.webp" alt="" width={24} height={16} />
         <h2 className="font-philosopher text-3xl whitespace-nowrap">Latest News</h2>
@@ -43,7 +43,7 @@ export default function RecentNews() {
           date="/05/2026"
         />
       </div>
-      <div className="mt-12 flex items-center justify-center">
+      <div className="scrub mt-12 flex items-center justify-center">
         <Button variant="medium">
           <a href="">See All News</a>
         </Button>

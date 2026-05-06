@@ -9,7 +9,7 @@ type PromotionProps = {
 
 export default function Promotion({ background, icon, title, details }: PromotionProps) {
   return (
-    <div className="relative overflow-hidden rounded-xs">
+    <div className="scrub relative overflow-hidden rounded-xs">
       <div
         className="absolute inset-0 z-10 opacity-80"
         style={{

@@ -5,6 +5,10 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { useState } from 'react'
 import Logo from '@/components/Logo'
+import gsap from 'gsap'
+import { useGSAP } from '@gsap/react'
+
+gsap.registerPlugin(useGSAP)
 
 const links = [
   { href: '/', label: 'HOME' },
@@ -47,6 +51,10 @@ function GradientText({ children }: { children: React.ReactNode }) {
 export default function Navbar() {
   const pathname = usePathname()
   const [menuOpen, setMenuOpen] = useState(false)
+
+  useGSAP(() => {
+    gsap.from('.navbar', { y: -60, opacity: 0, duration: 0.6, ease: 'power2.out' })
+  })
 
   return (
     <nav

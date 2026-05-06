@@ -41,7 +41,8 @@
       "Bash(node -e \"require\\('gsap'\\); console.log\\('ok'\\)\")"
     ],
     "additionalDirectories": [
-      "/private/tmp"
+      "/private/tmp",
+      "/Users/paulo/Sites/cross-mu-landing/src/components"
     ]
   }
 }

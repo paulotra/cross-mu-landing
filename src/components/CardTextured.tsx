@@ -16,7 +16,7 @@ export default function CardTextured({
   return (
     <div
       {...props}
-      className={`relative bg-[url('/btn-texture.webp')] bg-[length:1621px_772px] bg-[position:0_0] bg-no-repeat p-8 [box-shadow:0_12px_32px_rgba(0,0,0,0.40)] ${className}`}
+      className={`scrub relative bg-[url('/btn-texture.webp')] bg-[length:1621px_772px] bg-[position:0_0] bg-no-repeat p-8 [box-shadow:0_12px_32px_rgba(0,0,0,0.40)] ${className}`}
     >
       {corners && (
         <>
